@@ -134,7 +134,14 @@ pre.mermaid{margin:0;font-size:20px;text-align:center}
 <p class="pub-date">Posted Nov. 5, 2026 · Updated Nov. 6, 2026</p>
 </div></header>
 <main>
-<div class="plain"><h2>New here?</h2><p>Ogden's City Council also sits as the board of the city's Redevelopment Agency (RDA), which buys and sells land and uses future taxes to help projects. Start with the Gibson Avenue page to see how one RDA land deal works, from purchase to sale.</p></div>
+<div class="plain"><h2>New here?</h2><p>Ogden's City Council also sits as the board of the city's Redevelopment Agency (RDA), which buys and sells land and uses future taxes to help projects. Start with the Gibson Avenue page to see how one RDA land deal works, from purchase to sale.</p></div><style>.kid{background:#EAF6F6;border:3px solid #0E5E63;border-radius:14px;padding:16px 22px;margin:0 0 28px}.kid h2{margin:0 0 8px;color:#0E5E63;font-size:1.3rem}.kid ul{margin:0;padding-left:22px}.kid li{margin:0 0 8px;font-size:1.12rem;line-height:1.5}</style><div class="kid"><h2>Explain it like I'm 10</h2><ul><li>This collection is about Ogden City's government and the money it handles.</li><li>Ogden is run by a mayor and a city council. The same council members also run the RDA.</li><li>The RDA is the city's redevelopment agency. It buys land and helps pay for building projects.</li><li>Each page uses public records, like meeting minutes, budgets and state payment lists.</li><li>We show what the records say. You decide what it means.</li></ul></div><div class="mermaidbox" role="img" aria-label="Diagram: who runs Ogden's money. Voters elect the mayor and council. The council also sits as the RDA board. The city and RDA pay for projects, lobbyists and services."><pre class="mermaid">
+flowchart TD
+  V["Ogden voters"] --> M["Mayor"]
+  V --> C["City Council<br/>(7 members)"]
+  C --> R["Same 7 sit as<br/>the RDA board"]
+  M --> CITY["City budget:<br/>police, water,<br/>services, lobbyists"]
+  R --> PROJ["RDA projects:<br/>land deals,<br/>project areas"]
+</pre></div>
 <section><h2 class="sh">Pages</h2><div class="cards">
 <a href="gibson-ave-lync.html"><b>1781 Gibson Ave.: Ogden's RDA, Lync and the $7.4 million appraisal</b><span>A proposed $5.1 million sale of 10.8 acres to Lync Development, the 2023 purchase above appraisal, and Lync's other public records.</span><i>OC 001 · Posted Nov. 5, 2026</i></a>
 <a href="mayor-home-value-2026.html"><b>The mayor's home value dropped $151,737 in 2026</b><span>What the county's valuation records show, and what they don't.</span><i>OC 002 · Posted Nov. 5, 2026</i></a>
@@ -146,6 +153,7 @@ pre.mermaid{margin:0;font-size:20px;text-align:center}
 <a href="ogden-water-rates-pipeline.html"><b>Water rates and the $99 million pipeline</b><span>A rate increase tied to a named project, cost and plan.</span><i>OC 008 · Posted Nov. 6, 2026</i></a>
 <a href="ogden-lobbying-and-grants.html"><b>Who lobbies for Ogden, and what money came back</b><span>RRJ Consulting and the Bennett Group: what Ogden paid, what they report, and the state and federal money.</span><i>OC 009 · Posted Nov. 6, 2026</i></a>
 <a href="eric-gibson-economic-development.html"><b>Eric Gibson, Ogden's economic development director</b><span>Start date, prior work with Better City, and his role in the 1781 Gibson Ave. sale.</span><i>OC 010 · Posted Nov. 6, 2026</i></a>
+<a href="ogden-housing-jobs-who-pays.html"><b>Housing, jobs and who pays</b><span>Jobs and pay promised under state and city incentives, what it costs to rent or buy in Ogden, and how much tax increment goes to project areas.</span><i>OC 011 · Posted Nov. 6, 2026</i></a>
 </div></section>
 <section class="connect"><h2 class="sh">Other Hive work on Ogden</h2><ul>
 <li><a href="https://weber-county-hive.github.io/PIDS-Utah/wildcat-square-cra-ogden.html">Wildcat Square CRA, Ogden (PIDS-Utah)</a><span>Student housing at Weber State and Ogden's RDA.</span></li>
@@ -160,5 +168,5 @@ pre.mermaid{margin:0;font-size:20px;text-align:center}
 <div class="hb-foot"><img src="hive-bee.png" alt=""><span class="hb-name">Utah Hive Politics</span><span class="hb-sub">from the publisher of The Weber County Hive</span><span class="hb-tag">Independent · Accountability · Journalism</span><p class="hb-line">The Weber County Hive and Utah Hive Politics: the people's publication. We investigate what's best for the public as a whole, not for any party or special interest group. We report public records. You decide.</p><p class="hb-tips"><a class="hb-btn" href="https://weber-county-hive.github.io/-weber-county-hive-index/tips.html#send">Send a tip</a><a class="hb-btn hb-btn2" href="https://weber-county-hive.github.io/-weber-county-hive-index/tips.html">Tips we checked</a><a class="hb-btn hb-btn2" href="https://weber-county-hive.github.io/-weber-county-hive-index/tips.html#send">See a mistake? Tell us</a></p><p class="hb-small">We never name tipsters. When we correct a page, the fix and its date are shown on the page.</p><p class="hb-small"><a href="index.html" style="color:#d4af37">Ogden City shelf</a> · <a href="https://weber-county-hive.github.io/-weber-county-hive-index/" style="color:#d4af37">Master Index (Hive library)</a> · <a href="https://webercountyhive.substack.com/" style="color:#d4af37">Read on Substack</a></p></div>
 <script>document.querySelectorAll('.flip').forEach(function(f){f.addEventListener('click',function(){f.setAttribute('aria-expanded',f.getAttribute('aria-expanded')==='true'?'false':'true');});});</script>
 <script data-goatcounter="https://weberhive.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
-</body>
+<script type="module">import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.esm.min.mjs"; mermaid.initialize({startOnLoad:true,theme:"base",themeVariables:{fontSize:"20px",fontFamily:"Arial",primaryColor:"#eef6f6",primaryBorderColor:"#0E5E63",primaryTextColor:"#0F1F3D",lineColor:"#0E5E63"},flowchart:{useMaxWidth:true,htmlLabels:true}});</script></body>
 </html>
